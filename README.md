@@ -5,8 +5,9 @@ work. Any ideas?
 # Repeat results:
 
 1. bundle install
-2. rails server
-3. visit /resque -- see it works
-4. visit /sidekiq -- see it doesn't work
-5. Check out config/routes.rb - I tried adding .new to the sidekiq one,
+2. rake routes - shows both apps
+3. rails server
+4. visit /resque -- see it works
+5. visit /sidekiq -- see it doesn't work
+6. Check out config/routes.rb - I tried adding .new to the sidekiq one,
    no dice.

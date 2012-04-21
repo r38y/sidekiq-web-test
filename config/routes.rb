@@ -1,7 +1,10 @@
 SidekiqTest::Application.routes.draw do
 
+  # copy/paste from docs
   require 'resque/server'
   mount Resque::Server.new, :at => "/resque"
+
+  # copy/paste from docs
   require 'sidekiq/web'
   mount Sidekiq::Web => '/sidekiq'
   # The priority is based upon order of creation:
